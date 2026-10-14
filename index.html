@@ -187,8 +187,9 @@ const card=document.createElement("article");
 card.className="card";
 card.innerHTML=`
 <div class="car-art">
+${c.brand === "Audi" && c.model === "A3 Sedan" ? '<img src="images/audi-a3.avif" alt="Audi A3 Sedan" style="width:75%;height:100%;object-fit:contain;">' : carSvg}
 <span class="discount">%${discount} ÖRNEK İNDİRİM</span>
-${carSvg}
+
 </div>
 <div class="card-body">
 <div class="brand">${c.brand}</div>
